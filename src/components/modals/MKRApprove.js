@@ -29,16 +29,16 @@ class MKRApprove extends Component {
           return (
             <Fragment>
               <StyledTop>
-                <StyledTitle>Voting Contract MKR Allowances</StyledTitle>
+                <StyledTitle>Voting Contract MAHA Allowances</StyledTitle>
               </StyledTop>
               <StyledBlurb style={{ textAlign: 'center', marginTop: '30px' }}>
                 <div
                   style={{ margin: 'auto', marginTop: '10px', width: '90%' }}
                 >
-                  Before you deposit MKR into your voting contract for the first
-                  time, you must give it allowances from your cold wallet. By
-                  clicking "grant", you will grant the voting contract
-                  permission to move your MKR into the voting contracts, a
+                  Before you deposit MAHA into your voting contract for the
+                  first time, you must give it allowances from your cold wallet.
+                  By clicking "grant", you will grant the voting contract
+                  permission to move your MAHA into the voting contracts, a
                   capability you can revoke at any time.
                 </div>
               </StyledBlurb>

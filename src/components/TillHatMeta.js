@@ -31,7 +31,7 @@ export default ({ candidate }) => (
         ) : (
           formatRound(approvals)
         )}{' '}
-        MKR
+        MAHA
         <InSupport />
       </Standings>
     )}

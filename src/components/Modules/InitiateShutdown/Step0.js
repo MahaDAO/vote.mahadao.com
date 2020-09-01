@@ -34,7 +34,7 @@ export default ({ onClose, setStep, esmThresholdAmount, setTxHash }) => {
       <WarningIcon />
       <Text.h2 mt="m">Shutting down the Dai Credit System</Text.h2>
       <Text.p mt="m" mx="l" textAlign="center">
-        {`The ${esmThresholdAmount.toNumber()} MKR limit for the emergency shutdown module
+        {`The ${esmThresholdAmount.toNumber()} MAHA limit for the emergency shutdown module
         has been reached. By continuing past this alert, emergency shutdown will be initiated
         for the Dai Credit System.`}
       </Text.p>

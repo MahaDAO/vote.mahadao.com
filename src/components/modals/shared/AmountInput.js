@@ -62,7 +62,7 @@ export default class AmountInput extends Component {
     return (
       <Fragment>
         <InputLabels>
-          <div>Enter MKR amount</div>
+          <div>Enter MAHA amount</div>
           <div>
             <ValueLabel>{amountLabel}</ValueLabel> {maxAmount.toString(6)}
           </div>
@@ -72,7 +72,7 @@ export default class AmountInput extends Component {
           onKeyPress={this.handleKeyPress}
           value={this.state.amount}
           onChange={this.setAmount}
-          placeholder="00.0000 MKR"
+          placeholder="00.0000 MAHA"
           button={<GreyLink onClick={this.setMaxAmount}>Set max</GreyLink>}
         />
         <FlexRowEnd>

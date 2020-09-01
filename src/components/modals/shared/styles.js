@@ -233,7 +233,7 @@ export const MkrAmt = styled.p`
   white-space: nowrap;
   text-overflow: ellipsis;
   &:after {
-    content: ${({ noSuffix }) => (noSuffix ? "''" : "'MKR'")};
+    content: ${({ noSuffix }) => (noSuffix ? "''" : "'MAHA'")};
     color: #939393;
     margin-left: 4px;
   }

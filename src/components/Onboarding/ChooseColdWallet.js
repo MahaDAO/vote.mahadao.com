@@ -38,9 +38,9 @@ const SelectAWalletStep = ({
       <OnboardingHeader
         mt={[0, 0, 0, 'l']}
         title="Select a cold wallet"
-        subtitle="Select the cold wallet that holds your MKR. This selection will
+        subtitle="Select the cold wallet that holds your MAHA. This selection will
       enable you to vote and will not relinquish the custody that you
-      have over your MKR."
+      have over your MAHA."
       />
       <ButtonCard
         icon={<WalletIcon provider="trezor" />}
@@ -77,7 +77,7 @@ const ConfirmWalletStep = ({
       <OnboardingHeader
         mt={[0, 0, 0, 'l']}
         title="Link hot and cold wallet"
-        subtitle="Linking your hot and cold wallet will enable you to vote while your MKR is still stored in your cold wallet."
+        subtitle="Linking your hot and cold wallet will enable you to vote while your MAHA is still stored in your cold wallet."
       />
       <div>
         <AccountInfo account={coldWallet} tag={<ColdWalletTag />} />

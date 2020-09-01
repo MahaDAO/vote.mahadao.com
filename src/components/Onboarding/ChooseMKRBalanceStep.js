@@ -54,8 +54,8 @@ class ChooseMKRBalance extends React.Component {
       <Grid gridRowGap="m">
         <OnboardingHeader
           mt={[0, 0, 0, 'l']}
-          title="Select MKR Balance"
-          subtitle="Select the MKR balance that you would like to vote with, and its
+          title="Select MAHA Balance"
+          subtitle="Select the MAHA balance that you would like to vote with, and its
         corresponding Ethereum address."
         />
         <WithPagination
@@ -95,7 +95,7 @@ class ChooseMKRBalance extends React.Component {
                         <th />
                         <th>#</th>
                         <th>Address</th>
-                        <th>MKR</th>
+                        <th>MAHA</th>
                         <th>ETH</th>
                       </tr>
                     </thead>
@@ -127,7 +127,7 @@ class ChooseMKRBalance extends React.Component {
                                 <Address full={account.address} shorten />
                               </Link>
                             </td>
-                            <td>{account.mkrBalance || '0'} MKR</td>
+                            <td>{account.mkrBalance || '0'} MAHA</td>
                             <td>{account.ethBalance || '0'} ETH</td>
                           </tr>
                         );

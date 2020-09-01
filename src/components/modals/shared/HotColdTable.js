@@ -71,7 +71,7 @@ class HotColdTable extends Component {
             <tr>
               <th> Wallet </th>
               <th>Address</th>
-              <th>MKR</th>
+              <th>MAHA</th>
               <th>ETH</th>
             </tr>
           </thead>
@@ -86,7 +86,7 @@ class HotColdTable extends Component {
                   <CopyBtnIcon />
                 </CopyBtn>
               </InlineTd>
-              <td>{mkrBalanceCold} MKR</td>
+              <td>{mkrBalanceCold} MAHA</td>
               <td> {ethBalanceCold} ETH </td>
             </tr>
             <tr>
@@ -99,7 +99,7 @@ class HotColdTable extends Component {
                   <CopyBtnIcon />
                 </CopyBtn>
               </InlineTd>
-              <td>{mkrBalanceHot} MKR</td>
+              <td>{mkrBalanceHot} MAHA</td>
               <td> {ethBalanceHot} ETH </td>
             </tr>
           </tbody>

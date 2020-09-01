@@ -45,7 +45,7 @@ const SelectAWalletStep = ({
             {' '}
             Select the wallet you would like to use as your voting wallet.
             <br />
-            This is a hot wallet and will only be able to vote with your MKR.
+            This is a hot wallet and will only be able to vote with your MAHA.
           </React.Fragment>
         }
       />
@@ -89,7 +89,7 @@ const ConfirmWalletStep = ({
         mt={[0, 0, 0, 'l']}
         title="Confirm voting wallet"
         subtitle="By confirming your voting wallet, you will be selecting the hot
-    wallet address below. It will only be able to vote with your MKR."
+    wallet address below. It will only be able to vote with your MAHA."
       />
       <div>
         {connecting && (

@@ -44,7 +44,7 @@ const Lock = ({
 
   return (
     <TransactionModal
-      txPurpose="This transaction is to lock your MKR. Your funds are safe. You can withdraw them at anytime"
+      txPurpose="This transaction is to lock your MAHA. Your funds are safe. You can withdraw them at anytime"
       txHash={txHash}
       txStatus={txStatus}
       account={account}
@@ -54,15 +54,15 @@ const Lock = ({
         return (
           <React.Fragment>
             <StyledTop>
-              <StyledTitle>Lock MKR</StyledTitle>
+              <StyledTitle>Lock MAHA</StyledTitle>
             </StyledTop>
             <StyledBlurb>
-              Locking your MKR allows you to vote. The more you lock the more
+              Locking your MAHA allows you to vote. The more you lock the more
               voting power you have. You can withdraw it at anytime
             </StyledBlurb>
             <AmountInput
-              buttonLabel="Lock MKR"
-              amountLabel="MKR balance"
+              buttonLabel="Lock MAHA"
+              amountLabel="MAHA balance"
               maxAmount={balance}
               skip={modalClose}
               onSubmit={amount => {

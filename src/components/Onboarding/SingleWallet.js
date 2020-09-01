@@ -77,7 +77,7 @@ class SingleWalletApprovals extends React.Component {
           <Stepper step={this.state.step}>
             <SignTransactionStep
               title="Grant permissions"
-              subtitle="Give the governance contract transfer allowances for your MKR tokens"
+              subtitle="Give the governance contract transfer allowances for your MAHA tokens"
               walletProvider={singleWallet.type}
               status={mkrApproveProxyTxStatus}
               tx={mkrApproveProxyTxHash}

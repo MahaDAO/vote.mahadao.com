@@ -15,7 +15,7 @@ const Confirmed = ({ onClose, txHash, network, title }) => {
         mt="m"
         textAlign="center"
       >
-        You have successfully burned your MKR in the Emergency Shutdown Module
+        You have successfully burned your MAHA in the Emergency Shutdown Module
       </Text>
       {txHash && (
         <Link

@@ -22,7 +22,7 @@ export default ({
     setLocalValue(mkrBalance);
   };
   const isNotValid = value => {
-    return value >= mkrBalance ? `You don't have enough MKR` : false;
+    return value >= mkrBalance ? `You don't have enough MAHA` : false;
   };
   const onChange = event => {
     const { value } = event.target;
@@ -37,7 +37,7 @@ export default ({
   return (
     <Grid gridRowGap="m" justifyContent="center">
       <Text.h2 mt="m" textAlign="center">
-        Burn your MKR in the ESM
+        Burn your MAHA in the ESM
       </Text.h2>
       <Grid
         gridRowGap="s"
@@ -46,13 +46,13 @@ export default ({
         alignSelf="center"
       >
         <Text.h5 textAlign="left" mt="m" ml="m" fontWeight="500">
-          Enter the amount of MKR to burn.
+          Enter the amount of MAHA to burn.
         </Text.h5>
         <Input
           mx={'m'}
           type="number"
           value={localValue}
-          placeholder={`0.00 MKR`}
+          placeholder={`0.00 MAHA`}
           onChange={onChange}
           failureMessage={error}
           after={
@@ -70,14 +70,14 @@ export default ({
               lineHeight: 1
             }}
           >
-            MKR BALANCE IN WALLET
+            MAHA BALANCE IN WALLET
           </Text>
           <Text
             t="caption"
             ml="s"
             style={{ fontSize: 14, color: '#48495F', lineHeight: 1 }}
           >
-            {`${mkrBalance && mkrBalance.toString()} MKR`}
+            {`${mkrBalance && mkrBalance.toString()} MAHA`}
           </Text>
         </Flex>
       </Grid>
@@ -96,9 +96,9 @@ export default ({
             my="s"
             style={{ textAlign: 'center', fontSize: 14, color: '#826318' }}
           >
-            {`You have ${deposits} additional MKR locked in DSChief.`}
+            {`You have ${deposits} additional MAHA locked in DSChief.`}
             <br />
-            {`Withdraw MKR from DSChief to burn it in the ESM.`}
+            {`Withdraw MAHA from DSChief to burn it in the ESM.`}
           </Text>
         </Flex>
       ) : null}

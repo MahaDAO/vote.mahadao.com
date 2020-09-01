@@ -73,7 +73,7 @@ const VoteTally = ({
           `${percentage}%`
         )}
       </VoteInfo>
-      <VoteInfo content="MKR">
+      <VoteInfo content="MAHA">
         {loadingApprovals ? (
           <Loader size={20} color="light_grey" background="white" />
         ) : (

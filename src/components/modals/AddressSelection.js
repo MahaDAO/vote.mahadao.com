@@ -125,7 +125,7 @@ class AddressSelection extends Component {
 
                         <th>Address</th>
                         <th>ETH</th>
-                        <th>MKR</th>
+                        <th>MAHA</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -152,7 +152,7 @@ class AddressSelection extends Component {
                               </CopyBtn>
                             </InlineTd>
                             <td>{ethBalance} ETH</td>
-                            <td>{mkrBalance} MKR</td>
+                            <td>{mkrBalance} MAHA</td>
                           </tr>
                         )
                       )}

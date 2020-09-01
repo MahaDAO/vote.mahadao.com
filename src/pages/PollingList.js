@@ -135,7 +135,7 @@ class MigrationNotificationBanner extends React.Component {
               >
                 migrate.makerdao.com
               </BannerLink>{' '}
-              to withdraw your MKR from the old system. This interface is using
+              to withdraw your MAHA from the old system. This interface is using
               the new{' '}
               <BannerLink
                 target="_blank"
@@ -206,7 +206,7 @@ export const VotingWeightBanner = ({ accountsFetching, activeAccount }) => {
       <FadeIn>
         <SmallMediumText>
           <Strong>Connected wallet: </Strong>
-          <Black>{formatRound(pollVotingPower, 4)} MKR</Black>{' '}
+          <Black>{formatRound(pollVotingPower, 4)} MAHA</Black>{' '}
         </SmallMediumText>
       </FadeIn>
     );

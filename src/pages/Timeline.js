@@ -149,7 +149,7 @@ class MigrationNotificationBanner extends React.Component {
               >
                 migrate.makerdao.com
               </BannerLink>{' '}
-              to withdraw your MKR from the old system. This interface is using
+              to withdraw your MAHA from the old system. This interface is using
               the new{' '}
               <BannerLink
                 target="_blank"
@@ -228,7 +228,7 @@ const Timeline = ({
                     <Bold>
                       {governingProposal.end_approvals
                         ? `${formatRound(governingProposal.end_approvals) +
-                            ' MKR'}`
+                            ' MAHA'}`
                         : ''}
                     </Bold>
                     .
@@ -287,7 +287,7 @@ const Timeline = ({
                       }`}
                       <Bold>
                         {proposal.end_approvals
-                          ? `${formatRound(proposal.end_approvals) + ' MKR'}`
+                          ? `${formatRound(proposal.end_approvals) + ' MAHA'}`
                           : ''}
                       </Bold>
                       .
@@ -305,7 +305,7 @@ const Timeline = ({
                       }`}
                       <Bold>
                         {proposal.end_approvals
-                          ? `${formatRound(proposal.end_approvals) + ' MKR'}`
+                          ? `${formatRound(proposal.end_approvals) + ' MAHA'}`
                           : ''}
                       </Bold>
                       .
@@ -330,7 +330,7 @@ const Timeline = ({
                                 hat.approvals - spellDetails.approvals < 0
                                   ? 0
                                   : hat.approvals - spellDetails.approvals
-                              ) + ' MKR'}
+                              ) + ' MAHA'}
                             </Bold>{' '}
                             needed to pass.
                           </Tag>

@@ -213,10 +213,10 @@ const Sidebar = ({
                     <img src={logo} alt="" />
                   </IconBackground>
                   <Flex justifyContent="center" flexDirection="column">
-                    <DataLabel>STORED MKR</DataLabel>
+                    <DataLabel>STORED MAHA</DataLabel>
                     <div>
                       <Text t="p2" fontWeight="semibold">
-                        {formatRound(coldWallet.proxy.votingPower, 4) || 0} MKR
+                        {formatRound(coldWallet.proxy.votingPower, 4) || 0} MAHA
                       </Text>
                     </div>
                     <SubtitleDataLabel>
@@ -251,10 +251,10 @@ const Sidebar = ({
                   <img src={logo} alt="" />
                 </IconBackground>
                 <Flex justifyContent="center" flexDirection="column">
-                  <DataLabel>STORED MKR</DataLabel>
+                  <DataLabel>STORED MAHA</DataLabel>
                   <div>
                     <Text t="p2" fontWeight="semibold">
-                      {formatRound(singleWallet.mkrBalance, 4) || 0} MKR
+                      {formatRound(singleWallet.mkrBalance, 4) || 0} MAHA
                     </Text>
                   </div>
                   <SubtitleDataLabel>

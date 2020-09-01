@@ -137,7 +137,7 @@ class InitiateLink extends React.Component {
             />
             <SignTransactionStep
               title="Grant hot wallet permissions"
-              subtitle="Give your voting contract permission so that your hot wallet can vote with your MKR"
+              subtitle="Give your voting contract permission so that your hot wallet can vote with your MAHA"
               walletProvider={coldWallet.type}
               status={mkrApproveProxyTxStatus}
               tx={mkrApproveProxyTxHash}

@@ -14,10 +14,10 @@ export default ({ onClose, onContinue }) => {
   return (
     <Fragment>
       <WarningIcon />
-      <Text.h2 mt="m">Are you sure you want to burn MKR?</Text.h2>
+      <Text.h2 mt="m">Are you sure you want to burn MAHA?</Text.h2>
       <Text.p mt="m" mx="l" textAlign="center">
-        {`By burning your MKR in the ESM, you are contributing to the
-         shutdown of the Dai Credit System. Your MKR will be immediately burned
+        {`By burning your MAHA in the ESM, you are contributing to the
+         shutdown of the Dai Credit System. Your MAHA will be immediately burned
           and cannot be retrieved.`}
         {` `}
         <Link

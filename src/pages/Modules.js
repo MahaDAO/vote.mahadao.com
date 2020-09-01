@@ -36,8 +36,8 @@ const ESM = ({ activeAccount = {}, esm = {} } = {}) => {
       <Grid gridRowGap="m" mx={'2xl'} my={'2xl'} px={'2xl'}>
         <Text.h2 textAlign="left">Emergency Shutdown Module</Text.h2>
         <Text.p>
-          The ESM allows MKR holders to shutdown the system without a central
-          authority. Once 50,000 MKR are entered into the ESM, emergency
+          The ESM allows MAHA holders to shutdown the system without a central
+          authority. Once 50,000 MAHA are entered into the ESM, emergency
           shutdown can be executed.{` `}
           <Link
             href="https://docs.makerdao.com/smart-contract-modules/emergency-shutdown-module"

@@ -91,9 +91,9 @@ const ProxyOnboarding = ({ open, step, onboarding }) => {
       steps={[
         'Terms of use',
         'Select Voting Wallet',
-        'Select MKR Balance',
+        'Select MAHA Balance',
         'Initiate Link',
-        'Lock MKR',
+        'Lock MAHA',
         'Start Voting'
       ]}
     >
@@ -127,7 +127,7 @@ const SingleWalletOnboarding = ({ open, step, onboarding }) => {
       step={step}
       show={open}
       onClose={onboarding.close}
-      steps={['Terms of use', 'Grant Approval', 'Lock MKR', 'Start Voting']}
+      steps={['Terms of use', 'Grant Approval', 'Lock MAHA', 'Start Voting']}
     >
       <Terms
         onCancel={() => onboarding.setState(OnboardingStates.INTRODUCTION)}

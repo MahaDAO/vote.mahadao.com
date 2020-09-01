@@ -70,7 +70,7 @@ export default () => {
                       {event.amount.gte(0.01)
                         ? formatRound(event.amount.toNumber())
                         : formatRound(event.amount.toNumber(), 6)}{' '}
-                      MKR
+                      MAHA
                     </Text>
                   </td>
                   <td>

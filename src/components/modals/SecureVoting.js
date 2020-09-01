@@ -65,7 +65,7 @@ const SecureVoting = ({ modalOpen, modalClose, activeAccount, network }) => {
         </JustifiedFlexContainer>
         <PaddedFlexContainer>
           <BoxLeft>
-            <VoteImpactHeading>Total MKR balance</VoteImpactHeading>
+            <VoteImpactHeading>Total MAHA balance</VoteImpactHeading>
             <MkrAmt>
               {formatRound(
                 Number(coldWallet.mkrBalance) +

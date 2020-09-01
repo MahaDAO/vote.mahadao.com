@@ -20,16 +20,16 @@ export default {
   ],
   coldWallet: [
     {
-      title: 'Am I giving up control of my MKR?',
+      title: 'Am I giving up control of my MAHA?',
       body:
-        'No. The voting contract is only able to vote on your behalf. Also, you will be able to withdraw your MKR at any time.'
+        'No. The voting contract is only able to vote on your behalf. Also, you will be able to withdraw your MAHA at any time.'
     }
   ],
   selectMKRBalance: [
     {
       title: 'Can I combine balances with different addresses?',
       body:
-        'No. You can only link one cold wallet address and its corresponding MKR balance. Choose the address with the highest MKR balance to have the most impact.'
+        'No. You can only link one cold wallet address and its corresponding MAHA balance. Choose the address with the highest MAHA balance to have the most impact.'
     }
   ],
   approveLink: [
@@ -43,19 +43,19 @@ export default {
     {
       title: 'What am I granting permission to?',
       body:
-        'By granting permissions in this transaction, you are allowing your proxy voting contract to lock your MKR. You are not relinquishing control of your MKR and can withdraw it at anytime.'
+        'By granting permissions in this transaction, you are allowing your proxy voting contract to lock your MAHA. You are not relinquishing control of your MAHA and can withdraw it at anytime.'
     }
   ],
   lockMKR: [
     {
-      title: 'Who controls my MKR when it is Locked?',
+      title: 'Who controls my MAHA when it is Locked?',
       body:
-        'You do. Locking MKR deposits your MKR to your secure voting contract but you still control it and can withdraw at anytime.'
+        'You do. Locking MAHA deposits your MAHA to your secure voting contract but you still control it and can withdraw at anytime.'
     },
     {
-      title: 'How long does it take to withdraw my MKR?',
+      title: 'How long does it take to withdraw my MAHA?',
       body:
-        'Depending on the network speed, withdrawing your MKR usually takes less than 5 minutes. '
+        'Depending on the network speed, withdrawing your MAHA usually takes less than 5 minutes. '
     }
   ]
 };

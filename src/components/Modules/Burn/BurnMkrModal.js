@@ -54,17 +54,17 @@ export default props => {
           <Step3
             txHash={txHash}
             onClose={onClose}
-            title={'Your MKR is being burned'}
+            title={'Your MAHA is being burned'}
           />
         );
       case 4:
         return (
-          <Step4a title={'MKR Burned'} txHash={txHash} onClose={onClose} />
+          <Step4a title={'MAHA Burned'} txHash={txHash} onClose={onClose} />
         );
       case 5:
         return (
           <Step4b
-            title={'Burn MKR Tx Failed'}
+            title={'Burn MAHA Tx Failed'}
             txHash={txHash}
             onClose={onClose}
           />

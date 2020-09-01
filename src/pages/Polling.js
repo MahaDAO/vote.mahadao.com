@@ -849,7 +849,7 @@ class Polling extends React.Component {
                         name: 'Total votes',
                         value: isNaN(poll.totalVotes)
                           ? '----'
-                          : `${formatRound(poll.totalVotes, 2)} MKR`
+                          : `${formatRound(poll.totalVotes, 2)} MAHA`
                       },
                       {
                         name: 'Participation',
@@ -1010,10 +1010,10 @@ function VoteBreakdownRankedChoice({ poll }) {
                 >
                   <div>{option}</div>
                   {eliminated ? (
-                    '0 MKR (0%)'
+                    '0 MAHA (0%)'
                   ) : (
                     <div>
-                      {firstChoice.plus(transfer).toFixed(1)} MKR (
+                      {firstChoice.plus(transfer).toFixed(1)} MAHA (
                       {firstPct.plus(transferPct).toFixed(1)}%)
                     </div>
                   )}
@@ -1037,7 +1037,7 @@ function VoteBreakdownRankedChoice({ poll }) {
                           color="darkLavender"
                           lineHeight="normal"
                         >
-                          {firstChoice.toFixed(1)} MKR ({firstPct.toFixed(1)}
+                          {firstChoice.toFixed(1)} MAHA ({firstPct.toFixed(1)}
                           %)
                         </Text.p>
                       </CardUI>
@@ -1065,7 +1065,7 @@ function VoteBreakdownRankedChoice({ poll }) {
                             color="darkLavender"
                             lineHeight="normal"
                           >
-                            - {firstChoice.toFixed(1)} MKR (
+                            - {firstChoice.toFixed(1)} MAHA (
                             {firstPct.toFixed(1)}
                             %)
                           </Text.p>
@@ -1094,7 +1094,7 @@ function VoteBreakdownRankedChoice({ poll }) {
                             color="darkLavender"
                             lineHeight="normal"
                           >
-                            + {transfer.toFixed(1)} MKR (
+                            + {transfer.toFixed(1)} MAHA (
                             {transferPct.toFixed(1)}
                             %)
                           </Text.p>

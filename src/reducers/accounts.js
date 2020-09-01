@@ -273,7 +273,7 @@ export const addAccount = account => async dispatch => {
     .service('chief')
     .getNumDeposits(account.address);
 
-  // if we don't have a vote proxy, but we have locked MKR, we must be voting with a single wallet
+  // if we don't have a vote proxy, but we have locked MAHA, we must be voting with a single wallet
   if (!hasProxy && numDeposits.toNumber() > 0) {
     return await dispatch(addSingleWalletAccount(account));
   } else {
@@ -562,7 +562,7 @@ const accounts = createReducer(initialState, {
   [SEND_MKR_TO_PROXY_SUCCESS]: updateProxyBalance(true),
   [WITHDRAW_MKR_SUCCESS]: updateProxyBalance(false),
   [WITHDRAW_ALL_MKR_SUCCESS]: updateProxyBalance(false),
-  [HARDWARE_ACCOUNTS_CONNECTING]: (state, { payload }) => {
+  [HARDWARE_ACCOUNTS_CONNECTING]: state => {
     return {
       ...state,
       onHardwareAccountChosen: () => {}
@@ -577,7 +577,7 @@ const accounts = createReducer(initialState, {
   [HARDWARE_ACCOUNTS_ERROR]: state => {
     return state;
   },
-  [HARDWARE_ACCOUNT_CONNECTED]: (state, { payload }) => {
+  [HARDWARE_ACCOUNT_CONNECTED]: state => {
     return {
       ...state,
       onHardwareAccountChosen: () => {}

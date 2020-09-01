@@ -282,10 +282,10 @@ export const getVoteBreakdown = async (pollId, options, endDate) => {
       x => parseInt(x.optionId) - 1 === index
     );
     const value = matchingOption
-      ? `${formatRound(matchingOption.mkrSupport, 2)} MKR (${formatRound(
+      ? `${formatRound(matchingOption.mkrSupport, 2)} MAHA (${formatRound(
           matchingOption.percentage
         )}%)`
-      : '0 MKR (0.00%)';
+      : '0 MAHA (0.00%)';
 
     const mkrSupportData = matchingOption
       ? {

@@ -98,7 +98,7 @@ class LockMKR extends React.Component {
     } else if (mkr === 0) {
       error = 'Please enter a number greater than zero';
     } else if (this.state.storageWallet.mkrBalanceRaw.lt(amount)) {
-      error = `The maximum amount of MKR you can lock is ${this.state.storageWallet.mkrBalanceRaw}`;
+      error = `The maximum amount of MAHA you can lock is ${this.state.storageWallet.mkrBalanceRaw}`;
     }
 
     this.setState({
@@ -131,8 +131,8 @@ class LockMKR extends React.Component {
           <Grid gridRowGap="l">
             {this.state.step <= 1 && (
               <OnboardingHeader
-                title="Lock MKR"
-                subtitle={`In order to participate in voting, you must lock your MKR tokens${
+                title="Lock MAHA"
+                subtitle={`In order to participate in voting, you must lock your MAHA tokens${
                   !this.props.singleWallet
                     ? ' into your secure voting contract.'
                     : ''
@@ -143,21 +143,21 @@ class LockMKR extends React.Component {
             <Stepper step={this.state.step}>
               <Grid gridRowGap="l">
                 <div>
-                  <Label mb="s">Available MKR</Label>
+                  <Label mb="s">Available MAHA</Label>
                   <div>
                     {this.state.storageWallet.mkrBalanceRaw
                       .toBigNumber()
                       .toFixed(6)}{' '}
-                    MKR available to vote
+                    MAHA available to vote
                   </div>
                 </div>
 
                 <div>
-                  <Label mb="s">MKR you would like to vote with?</Label>
+                  <Label mb="s">MAHA you would like to vote with?</Label>
                   <div>
                     <Input
                       maxWidth={`${inputWidth}`}
-                      placeholder="00.0000 MKR"
+                      placeholder="00.0000 MAHA"
                       value={this.state.votingMKR}
                       onChange={this.handleVotingMKRChange}
                       onBlur={this.validateOnBlur}
@@ -191,7 +191,7 @@ class LockMKR extends React.Component {
                 </Flex>
               </Grid>
               <div>
-                <Label mb="xs">MKR in your control</Label>
+                <Label mb="xs">MAHA in your control</Label>
                 <Card px="m" py="s">
                   <Grid
                     alignItems="center"
@@ -232,7 +232,7 @@ class LockMKR extends React.Component {
                   <img src={linkImg} alt="" />
                 </Box>
 
-                <Label mb="xs">Secure MKR ready to vote</Label>
+                <Label mb="xs">Secure MAHA ready to vote</Label>
                 <Card px="m" py="s">
                   <Grid
                     alignItems="center"
@@ -246,7 +246,7 @@ class LockMKR extends React.Component {
                       <Link fontWeight="semibold">Address hidden</Link>
                     </Box> */}
                     <Box gridRow={['2', '1']} gridColumn={['1/3', '3']}>
-                      {formatRound(this.state.votingMKR, 6)} MKR
+                      {formatRound(this.state.votingMKR, 6)} MAHA
                     </Box>
                     <Flex justifyContent="flex-end">
                       <VotingContractTag />
@@ -267,15 +267,15 @@ class LockMKR extends React.Component {
                 </Flex>
               </div>
               <SignTransactionStep
-                title="Confirm lock MKR"
+                title="Confirm lock MAHA"
                 subtitle={
                   <span>
-                    In order to start voting please confirm the Locking of MKR
+                    In order to start voting please confirm the Locking of MAHA
                     on your {this.props.skipProxy ? '' : 'cold'} wallet ending
                     in <Link>{this.state.storageWallet.address.slice(-4)}</Link>
                     .
                     <br />
-                    You can withdraw your MKR at anytime.
+                    You can withdraw your MAHA at anytime.
                   </span>
                 }
                 walletProvider={this.state.storageWallet.type}

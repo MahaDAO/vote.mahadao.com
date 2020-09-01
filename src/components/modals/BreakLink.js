@@ -78,7 +78,7 @@ class BreakLink extends Component {
                 </StyledTop>
                 <StyledBlurb style={{ textAlign: 'center', marginTop: '20px' }}>
                   Before you can break your wallet link, you must withdraw all
-                  MKR from the voting contract
+                  MAHA from the voting contract
                 </StyledBlurb>
                 <div
                   style={{
@@ -99,7 +99,7 @@ class BreakLink extends Component {
                       modalOpen(Withdraw);
                     }}
                   >
-                    Withdraw MKR
+                    Withdraw MAHA
                   </Button>
                 </div>
               </Fragment>
@@ -159,7 +159,6 @@ const mapStateToProps = state => ({
   txStatus: state.proxy.breakLinkTxStatus
 });
 
-export default connect(
-  mapStateToProps,
-  { breakLink, modalClose, modalOpen }
-)(BreakLink);
+export default connect(mapStateToProps, { breakLink, modalClose, modalOpen })(
+  BreakLink
+);

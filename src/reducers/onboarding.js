@@ -155,7 +155,7 @@ const onboarding = createReducer(initialState, {
           newAccount.proxy.hasInfMkrApproval) ||
         (newAccount.singleWallet && newAccount.proxy.hasInfMkrApproval)
       ) {
-        // we don't rely on onboarding for depositing MKR.
+        // we don't rely on onboarding for depositing MAHA.
         return { state: OnboardingStates.FINISHED, open: false };
       } else if (
         newAccount.hasProxy &&

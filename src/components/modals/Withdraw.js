@@ -38,7 +38,7 @@ const Withdraw = ({
 }) => {
   return (
     <TransactionModal
-      txPurpose="This transaction is to withdraw your MKR back to your cold wallet"
+      txPurpose="This transaction is to withdraw your MAHA back to your cold wallet"
       account={account}
       txHash={txHash}
       txStatus={txStatus}
@@ -48,15 +48,15 @@ const Withdraw = ({
         return (
           <React.Fragment>
             <StyledTop>
-              <StyledTitle>Withdraw MKR</StyledTitle>
+              <StyledTitle>Withdraw MAHA</StyledTitle>
             </StyledTop>
             <StyledBlurb>
-              Please select the amount of MKR to withdraw from the voting
+              Please select the amount of MAHA to withdraw from the voting
               contract. This will be sent back to the designated cold wallet.
             </StyledBlurb>
             <AmountInput
-              buttonLabel="Withdraw MKR"
-              amountLabel="MKR in voting system"
+              buttonLabel="Withdraw MAHA"
+              amountLabel="MAHA in voting system"
               maxAmount={balance}
               onCancel={modalClose}
               onSubmit={(amount, useFreeAll) => {
