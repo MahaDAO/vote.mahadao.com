@@ -52,7 +52,7 @@
     "build": "CI=false craco build",
     "now-build": "yarn build",
     "deploy": "yarn build && now ./build -A ../now.json",
-    "push": "yarn build && echo 'vote.mahadao.com' > ./build/CNAME && gh-pages deploy",
+    "push": "yarn build && echo 'vote.mahadao.com' > ./build/CNAME && gh-pages -d build",
     "testchain": "./scripts/run-testchain.sh",
     "test": "yarn testchain --ci yarn jest",
     "cover": "yarn testchain --ci yarn jest --coverage",
