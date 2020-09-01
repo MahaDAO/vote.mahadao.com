@@ -1,0 +1,10 @@
+{
+  "name": "maker-governance-portal-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "serve --single"
+  },
+  "dependencies": {
+    "serve": "latest"
+  }
+}
